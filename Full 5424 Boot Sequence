@@ -1,0 +1,101 @@
+The system is coming up, please wait...
+ 
+ 
+U-Boot 1.1.3 (Mar 31 2011 - 12:16:18)
+ 
+CPU:   AMCC PowerPC 440EPx Rev. A at 660 MHz (PLB=165, OPB=82, EBC=41 MHz)
+       No Security/Kasumi support
+       I2C boot EEPROM enabled
+       Bootstrap Option G - Boot ROM Location I2C (Addr 0x54)
+       Internal PCI arbiter enabled, PCI async ext clock used
+       32 kB I-Cache 32 kB D-Cache
+Board: Superhawk2
+I2C:   ready
+DRAM:  Initializing DDRSDRAM
+DDR Init: speed = 165000002
+DQS calibration - Window detected:
+max_passing_cases = 54
+wr_dqs_shift      = 95
+dll_dqs_delay_X   = 31
+dll_dqs_delay_X window = 5 - 58
+DDR0_09=0x00011d5f
+DDR0_22=0x00267f0b
+DDR0_17=0x1f005100
+DDR0_18=0x1f1f1f1f
+DDR0_19=0x1f1f1f1f
+ECC Enabling   DONE
+512 MB
+POST RAM test disabled.
+Now running in RAM - U-Boot at: 1fb31000
+trap_init : 0x0
+system inventory subsystem initialized
+FLASH: Tomahawk CFI Flash Driver Initialized
+4 MB
+ATA interface setup: io_base=0xf8f00000, port=0x1f0, ctl=0x3f6
+PCI:
+Skip our host bridge
+        00  08  1657  0011  0280  18
+In:    serial
+Out:   serial
+Err:   serial
+Net:
+ 
+Checking system RAM - press any key to stop test
+ 
+Checking memory address: 00100000
+ 
+System RAM test using Default POST RAM Test succeeded.
+ 
+set_bootstatus: BS_LOAD_OS, platform_idx = 5
+ 
+Type run flash_nfs to mount root filesystem over NFS
+ 
+Hit ESC to stop autoboot:  0
+Map file at LBA sector 0x94f98
+## Booting image at 00400000 ...
+   Image Name:   Linux-2.6.14.2
+   Image Type:   PowerPC Linux Multi-File Image (uncompressed)
+   Data Size:    4269595 Bytes =  4.1 MB
+   Load Address: 00000000
+   Entry Point:  00000000
+   Contents:
+   Image 0:  3190918 Bytes =  3 MB
+   Image 1:  1078663 Bytes =  1 MB
+## Current stack ends at 0x1FAEFBE0 => set upper limit to 0x00C00000
+## initrd at 0x0070B0D4 ... 0x0081265A (len=1078663=0x107587)
+   Loading Ramdisk to 1f9e7000, end 1faee587 ... OK
+initrd_start = 1f9e7000, initrd_end = 1faee587
+## Transferring control to Linux (at address 00000000) ...
+Installing Linux 2.6 Kernel
+Attempting to find a root file system on hda2...
+INIT: version 2.78 booting
+Bypassing firmware validation.
+INIT: Entering runlevel: 3
+Starting Fabric OS Services...
+FIPS off, RRD...
+rscmon_service: started thread!
+sys_chip_init: class 0 max 24 Done
+ethsw_ha_enabled = 1
+uptime: 4293888712; sup_qid: 0
+2000/01/06-18:40:33, [HAM-1004], 342, CHASSIS, INFO, M5424-n, Processor rebooted - Reboot
+ 
+.
+ 
+ 
+Fabric OS (switch3)
+ 
+ 
+enc5-b2 console login: SNMP Research EMANATE/Lite Agent Version 16.2.0.9
+Copyright 1989-2006 SNMP Research, Inc.
+All service instances on Active
+POST1: Started running Thu Jan  6 18:41:05 GMT 2000
+POST1: Test #1 - Running turboramtest
+POST1: Running diagshow
+POST1: Script PASSED with exit status of 0 Thu Jan  6 18:41:18 GMT 2000 took (0:0:13)
+POST2: Started running Thu Jan  6 18:41:20 GMT 2000
+POST2: Test #1 - Running portloopbacktest (SERDES)
+POST2: Running diagshow
+POST2: Script PASSED with exit status of 0 Thu Jan  6 18:41:28 GMT 2000 took (0:0:8)
+2000/01/06-18:41:30, [BL-1000], 343, CHASSIS, INFO, M5424-n, Initializing ports...
+2000/01/06-18:41:30, [BL-1001], 344, CHASSIS, INFO, M5424-n, Port initialization completed.
+2000/01/06-18:41:44, [SNMP-1007], 345, FID 128, INFO, enc5-b2, The last fabric change happened at: Thu Jan  6 18:41:44 2000
